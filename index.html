@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media_query.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variable.css">
+    <script src="./main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:100,200,300,400, regular,500,600,700,800,900"
+        rel="stylesheet">
+    <title>Streaming Movies</title>
+</head>
+
+<body>
+    <!-- Main contaner -->
+    <div class="container">
+        <header class="">
+            <div class="navbar">
+                <!-- Menu button for small screen -->
+                <button class="navbar-menu-btn">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                </button>
+                <a href="#" class="navbar-brand">
+                    <img src="./img/logo2.jpg" alt="">
+                </a>
+                <!-- Navbar navigation -->
+                <nav class="">
+                    <ul class="navbar-nav">
+                        <li> <a href="#" class="navbar-link"> Inicío</a></li>
+                        <li> <a href="#category" class="navbar-link">Categorias</a></li>
+                        <li> <a href="#live" class="navbar-link indicator">LIVE</a></li>
+                    </ul>
+                </nav>
+                <!-- Search and Sign-in -->
+                <div class="navbar-actions">
+                    <form action="#" class="navbar-form">
+                        <input type="text" name="search" placeholder="Estou procurando por...."
+                            class="navbar-form-search">
+                        <button class="navbar-form-btn">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </button>
+                        <button class="navbar-form-close">
+                            <ion-icon name="close-circle-outline"></ion-icon>
+                        </button>
+                    </form>
+
+
+                    <!-- Search button for small screen -->
+                    <button class="navbar-search-btn">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </button>
+
+                    <a href="#" class="navbar-signin">
+                        <span>Entrar</span>
+                        <ion-icon name="log-in-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- Main Section -->
+        <main>
+            <!-- Banner section -->
+            <section class="banner">
+                <div class="banner-card">
+                    <img src="./top-gun.jpg" class="banner-img" alt="">
+                    <div class="card-content">
+                        <div class="card-info">
+                            <div class="genre">
+                                <ion-icon name="film"></ion-icon>
+                                <span>Ação/Aventura</span>
+                            </div>
+                            <div class="year">
+                                <ion-icon name="calendar"></ion-icon>
+                                <span>2022</span>
+                            </div>
+                            <div class="duration">
+                                <ion-icon name="time"></ion-icon>
+                                <span>2h 11m</span>
+                            </div>
+                            <div class="quality">4K</div>
+                        </div>
+                        <h2 class="card-title">Top Gun: Maverick</h2>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Movies Section -->
+            <section class="movies">
+                <!-- Filter BAR -->
+                <div class="filter-bar">
+                    <div class="filter-dropdowns">
+                        <select name="genre" class="genre">
+                            <option value="all genres">Todos os Gêneros</option>
+                            <option value="action">Ação</option>
+                            <option value="adventure">Aventura</option>
+                            <option value="animal">Animais</option>
+                            <option value="animation">Animação</option>
+                            <option value="biography">Biografia</option>
+                        </select>
+                        <select name="year" class="year">
+                            <option value="all years">Para todas as Idades</option>
+                            <option value="2022">2022</option>
+                            <option value="2020-2021">2020-2021</option>
+                            <option value="2010-2019">2010-2019</option>
+                            <option value="2000-2009">2000-2009</option>
+                            <option value="1988-1999">1988-1999</option>
+                        </select>
+                    </div>
+                    <div class="filter-radios">
+                        <input type="radio" name="grade" id="featured" checked>
+                        <label for="featured">Destaques</label>
+
+                        <input type="radio" name="grade" id="popular">
+                        <label for="popular">Populares</label>
+
+                        <input type="radio" name="grade" id="newest">
+                        <label for="newest">Novos</label>
+
+                        <div class="checked-radion-bg"></div>
+                    </div>
+                </div>
+
+                <div class="movies-grid">
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./movies/Coming14.jpg" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="boolmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>9.0</span>
+                                </div>
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Agente Oculto</h3>
+                            <div class="card-info">
+                                <span class="genre"> Ação/Suspense</span>
+                                <span class="year">2022</span>
+                            </div>
+                        </div>
+                    </div><!-- Movie 1 -->
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./movies/aquaman.jpg" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="boolmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>10</span>
+                                </div>
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Aquaman and the Lost Kingdom</h3>
+                            <div class="card-info">
+                                <span class="genre"> Ação/Fantasia</span>
+                                <span class="year">2023</span>
+                            </div>
+                        </div>
+                    </div><!-- Movie 2 -->
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./movies/Adao.jpg" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="boolmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>9.9</span>
+                                </div>
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Black Adam</h3>
+                            <div class="card-info">
+                                <span class="genre"> Ação/Fantasia</span>
+                                <span class="year">2022</span>
+                            </div>
+                        </div>
+                    </div><!-- Movie 3 -->
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./movies/shazam.jpg" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="boolmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>9.2</span>
+                                </div>
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Shazam Fury of the gods</h3>
+                            <div class="card-info">
+                                <span class="genre"> Ação/Fantasia</span>
+                                <span class="year">2023</span>
+                            </div>
+                        </div>
+                    </div><!-- Movie 4 -->
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./movies/Kenobi.jpg" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="boolmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>10</span>
+                                </div>
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"> Kenobi</h3>
+                            <div class="card-info">
+                                <span class="genre"> Ação/Fantasia</span>
+                                <span class="year">2022</span>
+                            </div>
+                        </div>
+                    </div><!-- Movie 5 -->
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./movies/the boys.jpg" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="boolmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>10</span>
+                                </div>
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">The Boys</h3>
+                            <div class="card-info">
+                                <span class="genre"> Ação</span>
+                                <span class="year">2022</span>
+                            </div>
+                        </div>
+                    </div><!-- Movie 6 -->
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./movies/m17.jpg" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="boolmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>4.5</span>
+                                </div>
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Morbius</h3>
+                            <div class="card-info">
+                                <span class="genre"> Ação/Fantasia </span>
+                                <span class="year">2022</span>
+                            </div>
+                        </div>
+                    </div><!-- Movie 7 -->
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./movies/m18.jpg" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="boolmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>8.5</span>
+                                </div>
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">007 - Sem Tempo para Morrer</h3>
+                            <div class="card-info">
+                                <span class="genre">Ação/Thriller </span>
+                                <span class="year">2021</span>
+                            </div>
+                        </div>
+                    </div><!-- Movie 8-->
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./movies/m19.jpg" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="boolmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>9.5</span>
+                                </div>
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Halloween Kills: O Terror Continua</h3>
+                            <div class="card-info">
+                                <span class="genre"> Terror/Slasher </span>
+                                <span class="year">2021</span>
+                            </div>
+                        </div>
+                    </div><!-- Movie 9 -->
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./movies/m20.jpg" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="boolmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>9.5</span>
+                                </div>
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Sonic 2 - O Filme</h3>
+                            <div class="card-info">
+                                <span class="genre"> Aventura/Comédia </span>
+                                <span class="year">2022</span>
+                            </div>
+                        </div>
+                    </div><!-- Movie 10 -->
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./movies/m21.jpg" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="boolmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>7.5</span>
+                                </div>
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Uncharted: Fora do Mapa</h3>
+                            <div class="card-info">
+                                <span class="genre">Aventura/Ação </span>
+                                <span class="year">2022</span>
+                            </div>
+                        </div>
+                    </div><!-- Movie 11 -->
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./movies/m23.jpg" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="boolmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>7.5</span>
+                                </div>
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Jurassic World: Domínio</h3>
+                            <div class="card-info">
+                                <span class="genre">Ação/Ficção científica</span>
+                                <span class="year">2022</span>
+                            </div>
+                        </div>
+                    </div><!-- Movie 12-->
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./movies/m22.jpg" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="boolmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>7.5</span>
+                                </div>
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Scream</h3>
+                            <div class="card-info">
+                                <span class="genre">Terror</span>
+                                <span class="year">2015</span>
+                            </div>
+                        </div>
+                    </div><!-- Movie 13 -->
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./movies/m24.jpg" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="boolmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>7.5</span>
+                                </div>
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Indiana Jones 5</h3>
+                            <div class="card-info">
+                                <span class="genre"> Aventura/Ação</span>
+                                <span class="year">2023</span>
+                            </div>
+                        </div>
+                    </div><!-- Movie 14-->
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./movies/red-notice.jpg" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="boolmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>7.5</span>
+                                </div>
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Alerta Vermelho</h3>
+                            <div class="card-info">
+                                <span class="genre">Ação/Comédia</span>
+                                <span class="year">2021</span>
+                            </div>
+                        </div>
+                    </div><!-- Movie 15 -->
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./movies/Dumbledore.jpeg" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="boolmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>7.5</span>
+                                </div>
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Animais Fantásticos</h3>
+                            <div class="card-info">
+                                <span class="genre">Fantasia/Aventura</span>
+                                <span class="year">2022</span>
+                            </div>
+                        </div>
+                    </div><!-- Movie 16 -->
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./movies/casino-royale.jpg" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="boolmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>7.5</span>
+                                </div>
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">007: cassino-royale</h3>
+                            <div class="card-info">
+                                <span class="genre">Ação/Aventura</span>
+                                <span class="year">2006</span>
+                            </div>
+                        </div>
+                    </div><!-- Movie 17 -->
+                    <div class="movie-card">
+                        <div class="card-head">
+                            <img src="./movies/spider-men.jpg" alt="" class="card-img">
+                            <div class="card-overlay">
+                                <div class="boolmark">
+                                    <ion-icon name="bookmark-outline"></ion-icon>
+                                </div>
+                                <div class="rating">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>7.5</span>
+                                </div>
+                                <div class="play">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">SPIDER MAN</h3>
+                            <div class="card-info">
+                                <span class="genre">Ação/Aventura</span>
+                                <span class="year">2017</span>
+                            </div>
+                        </div>
+                    </div><!-- Movie 18 -->
+
+                </div>
+
+                <!-- lOAD MORE BUTTON -->
+                <button class="load-more">Mais Opções</button>
+            </section>
+            <hr>
+            <!-- category Section -->
+            <section class="category" id="category">
+                <h2 class="section-heading">Categorias</h2>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <img src="./img/007.jpg" alt="" class="card-img">
+                        <div class="name">Ação</div>
+                        <div class="total">100</div>
+                    </div><!-- 1 -->
+
+                    <div class="category-card">
+                        <img src="./img/terrorIT.jpg" alt="" class="card-img">
+                        <div class="name">Terror</div>
+                        <div class="total">80</div>
+                    </div><!-- 2 -->
+
+                    <div class="category-card">
+                        <img src="./img/Comedy2.jpg" alt="" class="card-img">
+                        <div class="name">Comédia</div>
+                        <div class="total">100</div>
+                    </div><!-- 3 -->
+
+                    <div class="category-card">
+                        <img src="./img/thriller2.jpg" alt="" class="card-img">
+                        <div class="name">Tiros</div>
+                        <div class="total">100</div>
+                    </div><!-- 4 -->
+
+                    <div class="category-card">
+                        <img src="./img/adventure2.jpg" alt="" class="card-img">
+                        <div class="name">Aventura</div>
+                        <div class="total">70</div>
+                    </div><!-- 5 -->
+
+                    <div class="category-card">
+                        <img src="./img/animated2.jpg" alt="" class="card-img">
+                        <div class="name">Animação</div>
+                        <div class="total">86</div>
+                    </div><!-- 6 -->
+
+                    <div class="category-card">
+                        <img src="./img/sci-fi2.jpeg" alt="" class="card-img">
+                        <div class="name">Ficção</div>
+                        <div class="total">100</div>
+                    </div><!-- 7 -->
+
+                    <div class="category-card">
+                        <img src="./img/Cars.jpg" alt="" class="card-img">
+                        <div class="name">Carros</div>
+                        <div class="total">76</div>
+                    </div><!-- 8 -->
+
+
+
+                </div>
+
+            </section>
+
+            <hr>
+            <!-- live section -->
+            <section class="live" id="live">
+                <h2 class="section-heading">Live Transmissões</h2>
+                <div class="live-grid">
+                    <div class="live-card">
+                        <div class="card-head">
+                            <img src="./img/the-walking-dead-hd-wallpaper-400x400.jpeg" alt="" class="card-img">
+                            <div class="live-badge">LIVE</div>
+                            <div class="total-viewers">400k viewers</div>
+                            <div class="play">
+                                <ion-icon name="play-circle-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img src="./img/bbcamerica.jpg" alt="" class="avatar">
+                            <h3 class="card-title">The Walking Dead<br> Season 1</h3>
+                        </div>
+                    </div><!-- Box1 -->
+                    <div class="live-card">
+                        <div class="card-head">
+                            <img src="./img/jax.jpeg" alt="" class="card-img">
+                            <div class="live-badge">LIVE</div>
+                            <div class="total-viewers">240k viewers</div>
+                            <div class="play">
+                                <ion-icon name="play-circle-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img src="./img/HBO-Logo-square.jpg" alt="" class="avatar">
+                            <h3 class="card-title">Sons of Anarchy<br> Season 4</h3>
+                        </div>
+                    </div><!-- Box2 -->
+                    <div class="live-card">
+                        <div class="card-head">
+                            <img src="./img/greysAnatomy.jpg" alt="" class="card-img">
+                            <div class="live-badge">LIVE</div>
+                            <div class="total-viewers">545k viewers</div>
+                            <div class="play">
+                                <ion-icon name="play-circle-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img src="./img/bbcamerica.jpg" alt="" class="avatar">
+                            <h3 class="card-title">GreysAnatomy<br> Season 15</h3>
+                        </div>
+                    </div><!-- Box3 -->
+                    <div class="live-card">
+                        <div class="card-head">
+                            <img src="./img/vikins.jpg" alt="" class="card-img">
+                            <div class="live-badge">LIVE</div>
+                            <div class="total-viewers">140k viewers</div>
+                            <div class="play">
+                                <ion-icon name="play-circle-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img src="./img/HBO-Logo-square.jpg" alt="" class="avatar">
+                            <h3 class="card-title">VIKINGS<br> Season 4</h3>
+                        </div>
+                    </div><!-- Box2 -->
+                </div>
+            </section>
+        </main>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="./img/logo2.jpg" alt="" class="footer-logo">
+                    <p class="sLogan">Filmes & Live </p>
+
+
+                    <div class="social-link">
+                        <a href="#">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-tiktok"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <h4 class="link-heading">Cinema Café</h4>
+
+                        <li class="link-item"><a href="#">Sobre Nós</a></li>
+                        <li class="link-item"><a href="#">Meu Perfil</a></li>
+                        <li class="link-item"><a href="#">Preços de Planos</a></li>
+                        <li class="link-item"><a href="#">Contatos</a></li>
+                    </ul>
+                    <ul>
+                        <h4 class="link-heading">Navegador</h4>
+                        <li class="link-item"><a href="#">Live TV</a></li>
+                        <li class="link-item"><a href="#">Live Notícias</a></li>
+                        <li class="link-item"><a href="#">Live Esportes</a></li>
+                        <li class="link-item"><a href="#">Live Streaming</a></li>
+                    </ul>
+                    <ul>
+                        <h4 class="link-heading">Opções</h4>
+                        <li class="link-item"><a href="#">TV shows</a></li>
+                        <li class="link-item"><a href="#">Filmes</a></li>
+                        <li class="link-item"><a href="#">Crianças</a></li>
+                        <li class="link-item"><a href="#">Coleções</a></li>
+                    </ul>
+                    <ul>
+                        <h4 class="link-heading">Ajuda</h4>
+                        <li class="link-item"><a href="#">Conta & Senha</a></li>
+                        <li class="link-item"><a href="#">Planos & Preços</a></li>
+                        <li class="link-item"><a href="#">Suporte Tecnico</a></li>
+                        <li class="link-item"><a href="#">Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+
+                <div class="copyright">
+                    <p>&#169; João JV ALL Right Reserved</p>
+                </div>
+
+                <div class="wrapper">
+                    <a href="#">Privacy policy</a>
+                    <a href="Terms and conditions"></a>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</html>
